@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+		<title>Order</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2? family=poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<section class="sub-header">
+			<nav>
+				<a href="index.html"><img src="images3/logo.jpg"></a>
+				<div class="nav-links" id="navLinks">
+					<i class="fa fa-times" onclick="hideMenu()"></i>
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="service.html">SERVICES</a></li>
+						<li><a href="about us.html">ABOUT US</a></li>
+						<li><a href="cont.html">CONTACT US</a></li>
+					</ul>
+				</div>
+				<i class="fa fa-bars" onclick="showMenu()"></i>
+			</nav>
+            <h1>TECHNICIAN OR MECHANICIAN REQUISITION FORM <br> FILL IN THE FORM BELOW</h1>
+              <section class="contact-us">
+				<div class="contact-col">
+					<form action="form-handler.php" method="post">
+						<input type="text" name="name" placeholder="Enter your Name" required>
+						<input type="email" name="email" placeholder="Enter your Email Address" required>
+						<input type="text" name="place" placeholder="Enter the place where you are" required>
+						<input type="text" name="Order" placeholder="Enter If you need a technician or Mechanician" required>
+						<input type="text" name="subject" placeholder="Enter your phone number" required>
+						<textarea rows="10" name="message" placeholder="State the problem" required></textarea>
+						<button type="submit" class="hero-btn green-btn">Send Message</button>
+					</form>
+				</div>
+
+		</section>
+		<section>
+		<div class="phone">
+			<h2>FOR ANY HELP YOU CAN CALL:</h2>
+					<div>
+					<i class="fa fa-phone"></i>	
+					
+							<h3>(+250) 783 136 588</h3>
+                        <h5>Mechanics Department</h5>
+                        <h3>(+250) 783 680 638</h3>
+                        <h5>Electricity and Electronics Department</h5>
+							<p>Joly services company ltd</p>
+					</div>
+				</div>
+				</section>
+		<script>
+	var navLinks=document.getElementById("navLinks");
+
+	function showMenu() {
+		navLinks.style.right="0";
+	}
+	function hideMenu() {
+		navLinks.style.right="-200px";
+	}
+</script>
+
+        </body>
+	</html>

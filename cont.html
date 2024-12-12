@@ -1,0 +1,115 @@
+
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+		<title>CONTACT US</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2? family=poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body>
+		<section class="sub-header">
+			<nav>
+				<a href="index.html"><img src="images3/logo.jpg"></a>
+				<div class="nav-links" id="navLinks">
+					<i class="fa fa-times" onclick="hideMenu()"></i>
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="service.html">SERVICES</a></li>
+						<li><a href="cont.html">CONTACT US</a></li>
+						<li><a href="about us.html">ABOUT US</a></li>
+					</ul>
+				</div>
+				<i class="fa fa-bars" onclick="showMenu()"></i>
+			</nav>
+            <h1>CONTACT US</h1>
+		</section>
+		<section class="location">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63798.17753694837!2d30.048872616674316!3d-2.0007136962269922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca8a4421b2e29%3A0x1b2bae7af1f7dbd0!2sGatenga%2C%20Kigali!5e0!3m2!1sen!2srw!4v1643026942445!5m2!1sen!2srw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		</section>
+		<section class="contact-us">
+			<div class="row">
+				<div class="contact-col">
+					<div>
+						<i class="fa fa-home"></i>
+						<span>
+							<h5>MAGERWA Road, Gikondo</h5>
+							<p>Juwakali</p>
+						</span>
+					</div>
+					<div>
+						<i class="fa fa-phone"></i>
+						<span>
+							<h5>(+250) 780 590 106</h5>
+							<p>Monday to saturday, 8AM to 5PM</p>
+						</span>
+					</div>
+					<div>
+						<i class="fa fa-envelope-o"></i>
+						<span>
+							<h5>jolyservicec@gmail.com</h5>
+							<p>Email us for any service.</p>
+						</span>
+					</div>
+				</div>
+				<div class="contact-col">
+					<form action="form-handler.php" method="post">
+						<input type="text" name="name" placeholder="Enter your Name" required>
+						<input type="email" name="email" placeholder="Enter your Email Address" required>
+						<input type="text" name="subject" placeholder="Enter your subject" required>
+						<textarea rows="10" name="message" placeholder="Message" required></textarea>
+						<button type="submit" class="hero-btn green-btn">Send Message</button>
+					</form>
+				</div>
+			</div>
+		</section>
+		<section class="footer">
+    <div class="cont">
+        <div class="row">
+            <div class="footer-col-1">
+               <h3>JOLY Services Company limited</h3>
+                <p>passion and work.</p>
+            </div> <div class="footer-col-2">
+               <img src="images3/logo.jpg">
+                <p>Our purpose is to provide trustable and fast services to our clients</p>
+            </div>
+             <div class="footer-col-3">
+               <h3>Useful links</h3>
+                <ul>
+                    <a href="index.html"><li>HOME</li></a>
+                    <a href="service.html"><li>SERVICES</li></a>
+                    <a href="cont.html"><li>CONTACT US</li></a>
+                    <a href="about us.html"><li>ABOUT US</li></a>
+                 </ul>
+            </div>
+           <div class="footer-col-4">
+               <h3>Follow Us</h3>
+                <ul>
+                    <a href="https://www.facebook.com/JOLY-Services-Company-Ltd-108317521785104/"><i class="fa fa-facebook"></i><li>Facebook</li></a>
+                    <a href="https://instagram.com/jsco_ltd?/"><i class="fa fa-instagram"></i><li>Instagram</li></a>
+                    <a href=""><i class="fa fa-twitter"></i><li>Twitter</li></a>
+                    <a href="https://www.youtube.com/channel/UC5_tVueD-PNaoDmm73K7kZQ"><i class="fa fa-youtube"></i><li>Youtube</li></a>
+                 </ul>
+            </div>
+        </div> 
+         <hr>
+        <p class="copyright"> 2022 - Joly Services Company ltd</p>
+    </div>
+</section>
+
+		<script>
+	var navLinks=document.getElementById("navLinks");
+
+	function showMenu() {
+		navLinks.style.right="0";
+	}
+	function hideMenu() {
+		navLinks.style.right="-200px";
+	}
+</script>
+	</body>
+	</html>
